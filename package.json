@@ -1,21 +1,23 @@
 {
   "name": "react-micro-container",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Micro framework for React",
+  "main": "lib/micro_container.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hokaccha/react-micro-container.git"
   },
+  "files": ["README.md", "lib", "src"],
   "author": "Kazuhito Hokamura",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hokaccha/react-micro-container/issues"
   },
   "homepage": "https://github.com/hokaccha/react-micro-container",
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "prepublish": "npm run build"
+  },
   "dependencies": {
     "events": "^1.1.0"
   },
