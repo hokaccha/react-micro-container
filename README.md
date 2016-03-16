@@ -25,9 +25,9 @@ Counter.propTypes = {
 };
 
 // Stateful container component
-import Counter from 'react-micro-container';
+import MicroContainer from 'react-micro-container';
 
-class CounterContainer extends Container {
+class CounterContainer extends MicroContainer {
   constructor(props) {
     super(props);
     this.state = { count: 0 };

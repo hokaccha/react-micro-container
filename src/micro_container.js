@@ -1,7 +1,7 @@
 import React from 'react';
 import { EventEmitter } from 'events';
 
-export default class Container extends React.Component {
+export default class MicroContainer extends React.Component {
   constructor(props) {
     super(props);
 

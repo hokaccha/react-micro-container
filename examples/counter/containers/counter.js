@@ -1,8 +1,8 @@
 import React from 'react';
-import Container from '../../../src/container';
+import MicroContainer from '../../../src/micro_container';
 import Counter from '../components/counter';
 
-export default class CounterContainer extends Container {
+export default class CounterContainer extends MicroContainer {
   constructor(props) {
     super(props);
     this.state = { count: 0 };
