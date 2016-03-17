@@ -1,5 +1,11 @@
 # react-micro-container
 
+## Install
+
+```
+$ npm install react-micro-container
+```
+
 ## Usage
 
 ```javascript
