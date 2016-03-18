@@ -1,7 +1,7 @@
 import assert from 'power-assert';
 import sinon from 'sinon';
 import React from 'react';
-import MicroContainer from '../lib/micro_container';
+import MicroContainer from '../src/micro_container';
 
 describe('MicroContainer', () => {
   let spy;
