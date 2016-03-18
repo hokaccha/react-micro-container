@@ -31,4 +31,10 @@ describe('MicroContainer', () => {
     assert(spy.args[0][0] === 'bar');
     assert(spy.args[0][1] === 'baz');
   });
+
+  it('should remove event when call `unsubscribe`', () => {
+    container.unsubscribe();
+    container.dispatch('foo');
+    assert(spy.callCount === 1);
+  });
 });
