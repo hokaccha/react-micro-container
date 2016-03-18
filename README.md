@@ -1,5 +1,8 @@
 # react-micro-container
 
+[![Build Status](https://travis-ci.org/hokaccha/react-micro-container.svg?branch=master)](https://travis-ci.org/hokaccha/react-micro-container)
+[![npm version](https://badge.fury.io/js/react-micro-container.svg)](https://badge.fury.io/js/react-micro-container)
+
 ## Install
 
 ```
