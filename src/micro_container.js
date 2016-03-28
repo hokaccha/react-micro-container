@@ -17,14 +17,10 @@ export default class MicroContainer extends React.Component {
     this.emitter.emit(...args);
   }
 
-  on(...args) {
-    this.emitter.on(...args);
-  }
-
   subscribe(events) {
     Object.keys(events).forEach(name => {
       let handler = events[name];
-      this.on(name, handler.bind(this));
+      this.emitter.on(name, handler.bind(this));
     });
   }
 
