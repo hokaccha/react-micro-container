@@ -37,4 +37,11 @@ describe('MicroContainer', () => {
     container.dispatch('foo');
     assert(spy.callCount === 1);
   });
+
+  it('should return true if evens are handled by someone', () => {
+    assert(container.dispatch('foo') === true);
+  });
+  it('should return false if evens are not handled', () => {
+    assert(container.dispatch('unknown_event') === false);
+  });
 });
