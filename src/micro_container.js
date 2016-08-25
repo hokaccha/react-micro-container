@@ -14,7 +14,7 @@ export default class MicroContainer extends React.Component {
   }
 
   dispatch(...args) {
-    this.emitter.emit(...args);
+    return this.emitter.emit(...args);
   }
 
   subscribe(events) {
